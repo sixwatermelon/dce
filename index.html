@@ -143,7 +143,7 @@
     <!-- 登录界面 -->
     <div id="login-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-pink-500 to-purple-600 transition-opacity duration-1000">
         <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-md w-full mx-4 transform transition-all duration-700 hover:shadow-purple-500/30 animate-scale">
-            <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-center mb-6 text-primary text-glow">生日快乐！</h2>
+            <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-center mb-6 text-primary text-glow">生日快乐！邓承恩🎉</h2>
             <div class="flex justify-center mb-8">
                 <div class="w-20 h-20 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center shadow-lg animate-scale">
                     <i class="fa-solid fa-birthday-cake text-white text-3xl"></i>
@@ -279,8 +279,6 @@
                             <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 flex items-center justify-center shadow-lg animate-sparkle">
                                 <i class="fa fa-gift text-white text-2xl"></i>
                             </div>
-                            <h4 class="font-bold text-lg mb-2">惊喜礼物</h4>
-                            <p class="text-gray-600">一份特别的礼物正在路上，请注意查收！</p>
                         </div>
                     </div>
 
@@ -289,8 +287,6 @@
                             <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-400 to-cyan-500 flex items-center justify-center shadow-lg animate-sparkle" style="animation-delay: 0.3s;">
                                 <i class="fa fa-plane text-white text-2xl"></i>
                             </div>
-                            <h4 class="font-bold text-lg mb-2">旅行计划</h4>
-                            <p class="text-gray-600">一次难忘的旅行，一起创造美好回忆！</p>
                         </div>
                     </div>
 
@@ -299,8 +295,6 @@
                             <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center shadow-lg animate-sparkle" style="animation-delay: 0.6s;">
                                 <i class="fa fa-camera text-white text-2xl"></i>
                             </div>
-                            <h4 class="font-bold text-lg mb-2">纪念相册</h4>
-                            <p class="text-gray-600">记录我们一起走过的美好时光！</p>
                         </div>
                     </div>
                 </div>
@@ -333,7 +327,7 @@
             <footer class="bg-dark text-white py-8 px-6 md:px-12 text-center">
                 <p class="mb-4 text-glow">❤️ 永远年轻，永远热爱生活 ❤️</p>
                 <p class="text-sm opacity-70">
-                    用❤️制作 | 生日快乐 | 2025
+                    用❤️制作 | 邓承恩专属
                 </p>
             </footer>
         </div>
@@ -362,14 +356,14 @@
             const recipientName = document.getElementById('recipient-name');
 
             // 默认收件人名称，可以根据需要修改
-            const defaultName = '亲爱的朋友';
+            const defaultName = '我的好朋友邓承恩';
 
             // 登录表单提交事件
             loginForm.addEventListener('submit', (e) => {
                 e.preventDefault();
 
                 // 检查密码（示例密码：0112）
-                if (passwordInput.value === '0112') {
+                if (passwordInput.value === '0711') {
                     // 隐藏登录界面
                     loginScreen.classList.add('opacity-0');
 
@@ -519,7 +513,7 @@
             function startCountdown() {
                 // 设置目标日期（下一个生日）
                 const today = new Date();
-                const birthday = new Date(today.getFullYear(), 0, 12); // 示例：1月12日
+                const birthday = new Date(today.getFullYear(), 6, 11); // 示例：1月12日
 
                 // 如果今年的生日已经过了，设置为明年的生日
                 if (today > birthday) {
